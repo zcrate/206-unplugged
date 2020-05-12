@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -97,6 +97,232 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/**** BASE STRUCTURE ****/
+
+.root {
+  margin: 0;
+}
+
+.page {
+  min-width: 360px;
+  width: 100%;
+}
+
+.header, .footer, .hero, .newsletter, .features, .reviews, .mission, .map, .contact-section, .faq {
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** HEADER ***/
+.header-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.unplugged-logo, .header-nav {
+  flex-basis: 220px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 489px) {
+  .header-wrapper {
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    max-width: 130px
+  }
+
+  .nav-list {
+    justify-content: space-between;
+  }
+}
+
+/*** MAIN ***/
+
+
+/*** FOOTER ***/
+.footer-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.info-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 534px) {
+  .info-wrapper {
+    justify-content: space-between;
+  }
+}
+
+.contact, .social {
+  max-width: 340px;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 240px;
+  align-items: center;
+}
+
+.contact > *, .social > * {
+  text-align: center;
+}
+
+.social-wrapper {
+  width: 75%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.copyright {
+  align-items: center;
+}
+
+
+
+/** HERO **/
+.hero-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+}
+
+.hero-title {
+  max-width: 720px;
+  text-align: left;
+}
+
+/** NEWSLETTER **/
+.newsletter-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.newsletter-descr, .newsletter-form {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 288px;
+}
+
+@media screen and (min-width: 640px) {
+  .newsletter-descr, .newsletter-form {
+    max-width: 290px;
+  }
+}
+
+/** FEATURES **/
+.features {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.features-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+}
+
+.features-items {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 320px;
+  justify-content: center;
+}
+
+/** REVIEWS **/
+.reviews-wrapper {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.reviews-title {
+  max-width: 560px;
+  text-align: left;
+}
+
+.reviews-card {
+  min-width: 320px;
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.reviews-card-image, .reviews-card-info {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 320px;
+}
+
+/** MISSION **/
+.mission {
+  display: flex;
+}
+
+/** CONTACT **/
+.contact-section {
+  display: flex;
+}
+
+/** FAQ **/
+.faq {
+  display: flex;
+}
+
+.faq-items {
+  display: flex;
+}
 
 /* ==========================================================================
    Helper classes
