@@ -110,8 +110,7 @@ textarea {
 }
 
 .header, .footer, .hero, .newsletter, .features, .reviews, .mission, .map, .contact-section, .faq {
-  min-width: 360px;
-  width: 100%;
+  width: max(360px, 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,10 +125,9 @@ textarea {
 }
 
 /*** HEADER ***/
+
 .header-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -167,10 +165,9 @@ textarea {
 
 
 /*** FOOTER ***/
+
 .footer-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -215,13 +212,10 @@ textarea {
   align-items: center;
 }
 
-
-
 /** HERO **/
+
 .hero-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
 }
 
 .hero-title {
@@ -230,10 +224,9 @@ textarea {
 }
 
 /** NEWSLETTER **/
+
 .newsletter-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -249,11 +242,12 @@ textarea {
 
 @media screen and (min-width: 640px) {
   .newsletter-descr, .newsletter-form {
-    max-width: 290px;
+    max-width: 288px;
   }
 }
 
 /** FEATURES **/
+
 .features {
   width: 100%;
   display: flex;
@@ -262,9 +256,7 @@ textarea {
 }
 
 .features-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
 }
 
 .features-items {
@@ -275,10 +267,9 @@ textarea {
 }
 
 /** REVIEWS **/
+
 .reviews-wrapper {
-  min-width: 320px;
-  width: 90%;
-  max-width: 640px;
+  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
@@ -289,9 +280,7 @@ textarea {
 }
 
 .reviews-card {
-  min-width: 320px;
-  width: 100%;
-  max-width: 640px;
+  width: max(320px, 100%);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -305,7 +294,47 @@ textarea {
   flex: 1 1 320px;
 }
 
+
+/** FAQ **/
+
+.faq-wrapper {
+  width: clamp(320px, 90%, 640px);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.faq-items {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+
+.faq-item{
+  width: 100%;
+  flex: 1 1 320px;
+  box-shadow: 0 0 2px darkred;
+}
+
+@media screen and (min-width: 712px) {
+  .faq-item:nth-of-type(1),
+  .faq-item:nth-of-type(3) {
+    max-width: 302px;
+  }
+
+  .faq-item:nth-of-type(2),
+  .faq-item:nth-of-type(4) {
+    max-width: 288px;
+  }
+}
+
+
+
 /** MISSION **/
+
 .mission {
   display: flex;
 }
@@ -315,14 +344,6 @@ textarea {
   display: flex;
 }
 
-/** FAQ **/
-.faq {
-  display: flex;
-}
-
-.faq-items {
-  display: flex;
-}
 
 /* ==========================================================================
    Helper classes
