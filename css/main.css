@@ -109,7 +109,7 @@ textarea {
   width: 100%;
 }
 
-.header, .footer, .hero, .newsletter, .features, .reviews, .mission, .map, .contact-section, .faq {
+.header, .footer, .hero, .newsletter, .features, .reviews, .faq, .mission, .map, .contact-section {
   width: max(360px, 100%);
   display: flex;
   justify-content: center;
@@ -188,10 +188,10 @@ textarea {
 }
 
 .contact, .social {
+  flex: 1 1 240px;
   max-width: 340px;
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 240px;
   align-items: center;
 }
 
@@ -234,10 +234,10 @@ textarea {
 }
 
 .newsletter-descr, .newsletter-form {
+  flex: 1 1 288px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 288px;
 }
 
 @media screen and (min-width: 640px) {
@@ -260,9 +260,9 @@ textarea {
 }
 
 .features-items {
+  flex: 1 1 320px;
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 320px;
   justify-content: center;
 }
 
@@ -288,12 +288,13 @@ textarea {
 }
 
 .reviews-card-image, .reviews-card-info {
+  flex: 1 1 320px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 320px;
 }
 
+/*** FAQ PAGE ***/
 
 /** FAQ **/
 
@@ -310,39 +311,81 @@ textarea {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-
 }
 
 .faq-item{
-  width: 100%;
   flex: 1 1 320px;
-  box-shadow: 0 0 2px darkred;
 }
 
 @media screen and (min-width: 712px) {
   .faq-item:nth-of-type(1),
   .faq-item:nth-of-type(3) {
-    max-width: 302px;
+    max-width: 300px;
   }
 
   .faq-item:nth-of-type(2),
   .faq-item:nth-of-type(4) {
-    max-width: 288px;
+    max-width: 290px;
+  }
+}
+
+/*** ABOUT PAGE ***/
+
+/** MISSION **/
+
+.mission-wrapper {
+  width: clamp(320px, 90%, 640px);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.mission-text {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.mission-paragraph {
+  flex: 1 1 320px;
+}
+
+@media screen and (min-width: 712px) {
+  .mission-paragraph {
+    max-width: 300px;
   }
 }
 
 
+/** CONTACT-SECTION **/
 
-/** MISSION **/
-
-.mission {
+.contact-section-wrapper {
+  width: clamp(320px, 90%, 640px);
   display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 2px black;
 }
 
-/** CONTACT **/
-.contact-section {
+.contact-section-cards {
+  padding: 0;
+  width: 100%;
+  list-style: none;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
+
+.contact-section-item {
+  width: max(250px, 50%);
+  box-shadow: 0 0 2px darkblue;
+}
+
+.gen-info, .chat {
+  flex-basis: 320px;
+  box-shadow: 0 0 2px darkred;
+}
+
+
 
 
 /* ==========================================================================
