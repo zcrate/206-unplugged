@@ -327,12 +327,18 @@ textarea {
 /** FAQ **/
 
 .faq-wrapper {
+  margin: min(14%, 100px) 0;
   width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
 
-.faq-items {
+.faq-title {
+  margin: 0;
+}
+
+.faq-list {
+  margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -343,18 +349,21 @@ textarea {
 
 .faq-item{
   flex: 1 1 320px;
+  margin: max(75px - 7.8%, 33px) 0 0;
 }
 
 @media screen and (min-width: 712px) {
-  .faq-item:nth-of-type(1),
-  .faq-item:nth-of-type(3) {
+  .faq-item {
     max-width: 300px;
   }
+}
 
-  .faq-item:nth-of-type(2),
-  .faq-item:nth-of-type(4) {
-    max-width: 290px;
-  }
+.faq-item-title {
+  margin: 0 0 17px;
+}
+
+.faq-item-text {
+  margin: 0;
 }
 
 /*** ABOUT PAGE ***/
