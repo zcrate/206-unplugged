@@ -125,6 +125,11 @@ textarea {
   align-items: center;
 }
 
+.section-wrapper {
+  width: clamp(320px, 90%, 640px);
+
+}
+
 /*** HEADER ***/
 
 .header-wrapper {
@@ -188,10 +193,6 @@ textarea {
 
 /** HERO **/
 
-.hero-wrapper {
-  width: clamp(320px, 90%, 640px);
-}
-
 .hero-title {
   margin: clamp(55px, 17%, 105px) 0 0 0;
   max-width: max(320px, 85%);
@@ -202,7 +203,12 @@ textarea {
 
 .newsletter-wrapper {
   padding: 50px 0;
-  width: clamp(320px, 90%, 640px);
+  display: flex;
+  justify-content: center;
+}
+
+.new-subwrap {
+  max-width: 800px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -220,7 +226,7 @@ textarea {
 }
 
 .descr-title {
-  margin: 0 0 10px;
+  margin: 0 0 min(3.125%, 20px);
 }
 
 .descr-text {
@@ -231,11 +237,16 @@ textarea {
   margin: 0 0 18px;
 }
 
+.form-email, .form-submit {
+  width: 100%;
+}
+
 
 @media screen and (min-width: 556px) {
   .newsletter-descr, .newsletter-form {
     margin: 0;
-    max-width: 45%;
+    max-width: clamp(225px, 45%, 320px);
+    align-items: baseline;
   }
 }
 
@@ -243,9 +254,9 @@ textarea {
 
 .features-wrapper {
   padding: min(12.5%, 100px) 0;
-  width: clamp(320px, 90%, 640px);
+  display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+
 }
 
 .features-title {
@@ -287,7 +298,6 @@ textarea {
 
 .reviews-wrapper {
   padding: min(12.5%, 100px) 0;
-  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
@@ -327,7 +337,6 @@ textarea {
 
 .faq-wrapper {
   padding: min(14%, 100px) 0;
-  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
@@ -353,7 +362,7 @@ textarea {
 
 @media screen and (min-width: 712px) {
   .faq-item {
-    max-width: 300px;
+    max-width: 46%;
   }
 }
 
@@ -371,7 +380,6 @@ textarea {
 
 .mission-wrapper {
   padding: min(14%, 100px) 0;
-  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
@@ -403,21 +411,15 @@ textarea {
 @media screen and (min-width: 712px) {
   .mission-paragraph {
     margin: 0;
-    max-width: 45.3%;
+    max-width: 46%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mission-title {
-    margin: 0 0 max(80px - 6.25%, 20px);
-  }
-}
 
 /** CONTACT-SECTION **/
 
 .contact-section-wrapper {
   padding: min(12.5%, 100px) 0;
-  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
 }
@@ -457,7 +459,7 @@ textarea {
 @media screen and (min-width: 600px) {
   .contact-section-item {
     margin: 0;
-    max-width: 45.3%;
+    max-width: 46%;
   }
 
   .gen-title, .chat-title {
@@ -465,20 +467,9 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contact-section-title {
-    margin: 0 0 max(110px - 8.6%, 26px);
-  }
-
-  .gen-title, .chat-title {
-    margin: 0 0 min(6.9%, 40px);
-  }
-}
-
 /*** FOOTER ***/
 
 .footer-wrapper {
-  width: clamp(320px, 90%, 640px);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -502,7 +493,7 @@ textarea {
 .contact, .social {
   flex: 1 1 240px;
   padding: clamp(25px, 7.8%, 50px) 0;
-  max-width: 340px;
+  max-width: 320px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -527,12 +518,6 @@ textarea {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-
-  .copyright {
-    padding: min(1.6%, 14px);
-  }
-}
 
 
 /* ==========================================================================
@@ -627,6 +612,50 @@ textarea {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+
+/* LAYOUT ASSIST
+.header, .footer {background-color: darkgrey}
+.main {background-color: lightgrey}
+
+.header-wrapper, .footer-wrapper {background-color: white}
+.hero-wrapper {background-color: lightgreen}
+.newsletter-wrapper {background-color: lightsalmon}
+.features-wrapper {background-color: lightskyblue}
+.reviews-wrapper {background-color: lightgoldenrodyellow}
+.faq-wrapper {background-color: lightseagreen}
+.mission-wrapper {background-color: lightpink}
+.contact-section-wrapper {background-color: lightblue}
+
+.section-wrapper > * {box-shadow: 0 0 2px black}
+*/
+
+
+@media only screen and (min-width: 768px) {
+  .header-wrapper, .section-wrapper {
+    width: min(83.34%, 960px);
+  }
+
+  .faq-item {
+    flex: 1 1 321px;
+  }
+
+  .mission-title {
+    margin: 0 0 max(80px - 6.25%, 20px);
+  }
+
+  .contact-section-title {
+    margin: 0 0 max(110px - 8.6%, 26px);
+  }
+
+  .gen-title, .chat-title {
+    margin: 0 0 min(6.9%, 40px);
+  }
+
+  .copyright {
+    padding: min(1.6%, 14px);
+  }
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
