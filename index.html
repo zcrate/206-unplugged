@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -26,17 +28,17 @@
 
 <!-- HEADER -->
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header__wrapper">
 
-        <img class="unplugged-logo" src="./img/unpluggedlogo.png" alt="unplugged logo" />
+        <img class="unplugged-logo" src="./img/unpluggedlogo.png" alt="Unplugged Logo" />
 
-        <div class="header-divider"></div>
+        <div class="header__divider"></div>
 
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="./faq/index.html">faq</a></li>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="./faq/index.html">faq</a></li>
 
-            <li class="nav-item"><a class="nav-link" href="./about/index.html">about</a></li>
+            <li class="nav__item"><a class="nav__link" href="./about/index.html">about</a></li>
           </ul>
         </nav>
       </div>
@@ -46,25 +48,28 @@
 
 <!-- HERO -->
       <section class="hero">
-        <div class="hero-wrapper section-wrapper">
+        <div class="hero__wrapper section-wrapper">
 
-          <h1 class="hero-title">Retreat from the desk, <nobr>return refreshed.</nobr></h1>
+          <h1 class="hero__title">Retreat from the desk, return refreshed.</h1>
         </div>
       </section>
 
-<!-- NEWSLETTER -->
-      <aside class="newsletter">
-        <div class="newsletter-wrapper section-wrapper">
-          <div class="new-subwrap">
-            <div class="newsletter-descr">
-              <h2 class="descr-title">Want to join the next retreat?</h2>
-              <p class="descr-text">Find out when we are holding our next retreat and how your company or team can sign up!</p>
+<!-- SUBSCRIBE -->
+      <aside class="subscribe">
+        <div class="subscribe__wrapper section-wrapper">
+          <div class="subscribe__cards">
+            <div class="subscribe__card subscribe__card_text">
+              <h2 class="subscribe__title card-title">Want to join the next retreat?</h2>
+
+              <p class="subscribe__paragraph card-text">Find out when we are holding our next retreat and how your company or team can sign up!</p>
             </div>
 
-            <div class="newsletter-form">
-              <h2 class="form-title">Find out more</h2>
-              <input class="form-email" type="text" name="name" value="you@email.com">
-              <input class="form-submit" type="button" value="Download Itinerary">
+            <div class="subscribe__card">
+              <h2 class="subscribe__title card-title">Find out more</h2>
+
+              <input class="subscribe__email" type="text" name="name" value="yourname@email.com">
+
+              <input class="newletter__submit" type="button" value="Download Itinerary">
             </div>
           </div>
         </div>
@@ -72,44 +77,44 @@
 
 <!-- FEATURES -->
       <section class="features">
-        <div class="features-wrapper section-wrapper">
+        <div class="features__wrapper section-wrapper">
 
-          <h2 class="features-title">Have the work week you always <nobr>dreamed of —</nobr> <nobr>without the bad wifi.</nobr></h1>
+          <h2 class="features__title section-title">Have the work week you always <nobr>dreamed of —</nobr> <nobr>without the bad wifi.</nobr></h1>
 
-          <ul class="features-list">
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
-
-            </li>
-
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
+          <ul class="features__list">
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
 
             </li>
 
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">Private chef team providing on demand meals - just like your team kitchen.</p>
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
 
             </li>
 
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">Private chef team providing on demand meals - just like your team kitchen.</p>
 
             </li>
 
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
 
             </li>
 
-            <li class="features-item">
-                <img class="features-icon" src="" alt="">
-                <p class="features-text">Dedicated computer room for times that you must wifi.</p>
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
+
+            </li>
+
+            <li class="features__item">
+                <img class="features__icon" src="" alt="">
+                <p class="features__text card-text">Dedicated computer room for times that you must wifi.</p>
 
             </li>
           </ul>
@@ -118,17 +123,17 @@
 
 <!-- REVIEWS -->
       <section class="reviews">
-        <div class="reviews-wrapper section-wrapper">
+        <div class="reviews__wrapper section-wrapper">
 
-          <h2 class="reviews-title">Be a better team in 5 days, <nobr>like this one.</nobr></h2>
+          <h2 class="reviews__title section-title">Be a better team in 5 days, <nobr>like this one.</nobr></h2>
 
-          <article class="reviews-card">
-            <img class="reviews-card-image" src="" alt="LaCrue Bottling Company Image" />
+          <article class="reviews__card">
+            <img class="reviews__item reviews__item_image" src="" alt="LaCrue Bottling Company Image" />
 
-            <div class="reviews-card-info">
-              <h3 class="reviews-card-title">LaCrue Bottling Co.<br/>October 2018</h3>
+            <div class="reviews__item reviews__item_text">
+              <h3 class="reviews__card-title card-title">LaCrue Bottling Co.<br/>October 2018</h3>
 
-              <p class="reviews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Maecenas sed enim ut sem viverra aliquet. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Iaculis urna id volutpat lacus laoreet.</p>
+              <p class="reviews__paragraph card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Maecenas sed enim ut sem viverra aliquet. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Iaculis urna id volutpat lacus laoreet.</p>
             </div>
           </article>
         </div>
@@ -137,41 +142,41 @@
 
 <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-wrapper section-wrapper">
-        <div class="info-wrapper">
-          <address class="contact">
-            <h3 class="contact-title">contact</h3>
+      <div class="footer__wrapper section-wrapper">
+        <div class="footer__cards">
+          <address class="footer__card">
+            <h3 class="footer__title card-title">contact</h3>
 
-            <div class="contact-info">
-              <p class="contact-phone">555-555-5555</p>
+            <ul class="footer__list card-text">
+              <li class="footer__item" >555-555-5555</li>
 
-              <p class="contact-email">hello@unplugged.com</p>
-            </div>
+              <li class="footer__item" >hello@unplugged.com</li>
+            </ul>
           </address>
 
-          <div class="social">
-            <h3 class="social-title">social</h3>
+          <div class="footer__card">
+            <h3 class="footer__title card-title">social</h3>
 
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">A</a>
+            <ul class="footer__list footer__list_social">
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">A</a>
               </li>
 
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">B</a>
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">B</a>
               </li>
 
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">C</a>
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">C</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <p class="copyright">© 2019 | Unplugged</p>
+        <p class="footer__copyright card-text">© 2019 | Unplugged</p>
       </div>
     </footer>
   </div>

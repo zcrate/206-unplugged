@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="./../css/normalize.css">
   <link rel="stylesheet" href="./../css/main.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -26,17 +29,17 @@
 
 <!-- HEADER -->
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header__wrapper">
 
-        <img class="unplugged-logo" src="./../img/unpluggedlogo.png" alt="unplugged logo">
+        <img class="unplugged-logo" src="./img/unpluggedlogo.png" alt="Unplugged Logo" />
 
-        <div class="header-divider"></div>
+        <div class="header__divider"></div>
 
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="./../faq/index.html">faq</a></li>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="./faq/index.html">faq</a></li>
 
-            <li class="nav-item"><a class="nav-link" href="./about/">about</a></li>
+            <li class="nav__item"><a class="nav__link" href="./about/index.html">about</a></li>
           </ul>
         </nav>
       </div>
@@ -46,13 +49,13 @@
 
 <!-- MISSION -->
       <section class="mission">
-        <div class="mission-wrapper section-wrapper">
-          <h2 class="mission-title">Our Mission — we want to make you the team you always <nobr>wanted to be.</nobr></h2>
+        <div class="mission__wrapper section-wrapper">
+          <h2 class="mission__title section-title_lrg">Our Mission — we want to make you the team you always <nobr>wanted to be.</nobr></h2>
 
-          <div class="mission-text">
-            <p class="mission-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci nulla. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis.</p>
+          <div class="mission__text card-text">
+            <p class="mission__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci nulla. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis.</p>
 
-            <p class="mission-paragraph">Egestas tellus rutrum tellus pellentesque eu tincidunt. Massa sed elementum tempus egestas sed. Sit amet dictum sit amet. Ac orci phasellus egestas tellus. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</p>
+            <p class="mission__paragraph">Egestas tellus rutrum tellus pellentesque eu tincidunt. Massa sed elementum tempus egestas sed. Sit amet dictum sit amet. Ac orci phasellus egestas tellus. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</p>
           </div>
         </div>
       </section>
@@ -64,28 +67,28 @@
 
 <!-- CONTACT-SECTION -->
       <section class="contact-section">
-        <div class="contact-section-wrapper section-wrapper">
+        <div class="contact-section__wrapper section-wrapper">
 
-          <h2 class="contact-section-title">Contact us, because you all <nobr>need this.</nobr></h2>
+          <h2 class="contact-section__title section-title_lrg">Contact us, because you all <nobr>need this.</nobr></h2>
 
-          <ul class="contact-section-list">
-            <li class="contact-section-item">
+          <ul class="contact-section__list">
+            <li class="contact-section__item">
               <address class="gen-info">
-                <h3 class="gen-title">General Information</h3>
+                <h3 class="card-title">General Information</h3>
 
-                <div class="gen-text">
-                  <p class="gen-address">333 Main St, Lake Geneva, WI 53147</p>
+                <div class="contact-section__text card-text">
+                  <p class="contact-section__address">333 Main St, Lake Geneva, WI 53147</p>
                   <p class="gen-phone">555-555-5555</p>
                   <p class="gen-email">hello@unplugged</p>
                 </div-gen-text>
               </address>
             </li>
 
-            <li class="contact-section-item">
-              <address class="chat">
-                <h3 class="chat-title ">Chat with a Facilitator</h3>
+            <li class="contact-section__item">
+              <address class="chat-info">
+                <h3 class="card-title">Chat with a Facilitator</h3>
 
-                <div class="chat-text">
+                <div class="contact-section__text card-text">
                   <p class="chat-phone">555-555-5556</p>
                   <p class="chat-email">facilitator@unplugged.com</p>
                 </div>
@@ -98,41 +101,41 @@
 
 <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-wrapper section-wrapper">
-        <div class="info-wrapper">
-          <address class="contact">
-            <h3 class="contact-title">contact</h3>
+      <div class="footer__wrapper section-wrapper">
+        <div class="footer__cards">
+          <address class="footer__card">
+            <h3 class="footer__title card-title">contact</h3>
 
-            <div class="contact-info">
-              <p class="contact-phone">555-555-5555</p>
+            <ul class="footer__list card-text">
+              <li class="footer__item" >555-555-5555</li>
 
-              <p class="contact-email">hello@unplugged.com</p>
-            </div>
+              <li class="footer__item" >hello@unplugged.com</li>
+            </ul>
           </address>
 
-          <div class="social">
-            <h3 class="social-title">social</h3>
+          <div class="footer__card">
+            <h3 class="footer__title card-title">social</h3>
 
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">A</a>
+            <ul class="footer__list footer__list_social">
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">A</a>
               </li>
 
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">B</a>
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">B</a>
               </li>
 
-              <li class="social-item">
-                <a class="social-link" href="">
-                  <img class="social-icon" src="" alt="">C</a>
+              <li class="footer__item">
+                <a class="footer__social-link" href="">
+                  <img class="footer__social-icon" src="" alt="">C</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <p class="copyright">© 2019 | Unplugged</p>
+        <p class="footer__copyright card-text">© 2019 | Unplugged</p>
       </div>
     </footer>
   </div>
