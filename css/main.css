@@ -111,7 +111,7 @@ textarea {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
-  background-color: #000;
+  background-color: #202322;
 }
 
 .header, .footer, .hero, .subscribe, .features, .reviews, .faq, .mission, .map, .contact-section {
@@ -238,7 +238,11 @@ address {
   font-family: 'Poppins', sans-serif;
 }
 
-/** subscribe **/
+/** SUBSCRIBE **/
+
+.subscribe {
+  background-color: #527158;
+}
 
 .subscribe__wrapper {
   padding: 50px 0;
@@ -260,22 +264,39 @@ address {
   flex-flow: column nowrap;
 }
 
-.subscribe__card_text {
-  margin: 0 0 35px;
+.subscribe__card_form {
+  margin-top: 30px;
+}
+
+.subscribe__title {
+  margin: 0 0 20px;
 }
 
 .subscribe__paragraph {
   margin: 0;
 }
 
-.subscribe__title, .subscribe__email {
-  margin: 0 0 20px;
-}
-
-.subscribe__email, .newletter__submit {
+.subscribe__email {
+  box-sizing: border-box;
   width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
 
+.subscribe__submit {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 @media screen and (min-width: 556px) {
   .subscribe__card {
@@ -330,6 +351,10 @@ address {
 
 
 /** REVIEWS **/
+
+.reviews {
+  background-color: #2a423a;
+}
 
 .reviews__wrapper {
   padding: min(12.5%, 100px) 0;
@@ -386,6 +411,10 @@ address {
 
 /** FAQ **/
 
+.faq {
+  background-color: #527158;
+}
+
 .faq__wrapper {
   padding: min(14%, 100px) 0;
   display: flex;
@@ -411,23 +440,31 @@ address {
   margin: max(75px - 7.8%, 33px) 0 0;
 }
 
+  .faq__item-title {
+    margin: 0 0 17px;
+  }
+
+  .faq__item-text {
+    margin: 0;
+  }
+
 @media screen and (min-width: 712px) {
   .faq__item {
     max-width: 46%;
   }
-}
 
-.faq__item-title {
-  margin: 0 0 17px;
-}
-
-.faq__item-text {
-  margin: 0;
+  .faq__item-title {
+    margin-left: 2px;
+  }
 }
 
 /*** ABOUT PAGE ***/
 
 /** MISSION **/
+
+.mission {
+  background-color: #527158;
+}
 
 .mission__wrapper {
   padding: min(14%, 100px) 0;
@@ -465,6 +502,10 @@ address {
 
 
 /** CONTACT-SECTION **/
+
+.contact-section {
+  background-color: #2a423a;
+}
 
 .contact-section__wrapper {
   padding: min(12.5%, 100px) 0;
