@@ -161,9 +161,15 @@ address {
   font-style: normal;
 }
 
+
+figure {
+  margin: 0;
+}
+
 img {
   width: 100%;
 }
+
 
 /*** HEADER ***/
 
