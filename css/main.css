@@ -161,6 +161,10 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
 /*** HEADER ***/
 
 .header__wrapper {
@@ -172,6 +176,7 @@ address {
 }
 
 .unplugged-logo, .nav {
+  margin: 0;
   padding: 15px 0;
   width: clamp(220px, 60%, 220px);
 }
@@ -228,8 +233,14 @@ address {
 
 /** HERO **/
 
+.hero {
+  padding: clamp(70px, 19.5%, 125px) 0 clamp(300px, 83.33%, 420px);
+  background: url("./../img/jake-melara-30679-unsplash.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .hero__title {
-  margin: clamp(55px, 17%, 105px) 0 0 0;
+  margin: 0;
   max-width: max(640px, 85%);
   text-align: left;
 
@@ -308,6 +319,11 @@ address {
 
 /** FEATURES **/
 
+.features {
+  background: url("./../img/rawpixel-800820-unsplash1.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .features__wrapper {
   padding: min(12.5%, 100px) 0;
   display: flex;
@@ -373,7 +389,7 @@ address {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .reviews__item {
@@ -403,9 +419,6 @@ address {
 .reviews__paragraph {
   margin: 0;
 }
-
-
-
 
 /*** FAQ PAGE ***/
 
@@ -725,6 +738,10 @@ address {
 @media only screen and (min-width: 768px) {
   .header__wrapper, .section-wrapper {
     width: min(83.34%, 960px);
+  }
+
+  .hero {
+    padding: max(250px - 16.3vw, 70px) 0 420px;
   }
 
   .hero__title {
